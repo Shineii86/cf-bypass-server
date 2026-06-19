@@ -2,5 +2,4 @@
 builder = "dockerfile"
 
 [deploy]
-startCommand = "python server.py"
 sleepApplication = true
