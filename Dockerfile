@@ -1,6 +1,5 @@
-FROM python:3.12-alpine
+FROM node:20-alpine
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY server.py .
-CMD ["python", "server.py"]
+COPY server.js .
+EXPOSE 3000
+CMD ["node", "server.js"]
